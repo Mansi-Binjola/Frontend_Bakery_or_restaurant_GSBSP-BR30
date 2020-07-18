@@ -1,0 +1,19 @@
+h1	{
+	text-transform: uppercase;
+	}
+a {
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	}
+.img-logo{
+	max-width:50px;
+	height:auto;
+}
+nav{
+	display: block;
+}
+.carousal-inner{
+	width:100%;
+	max-height: 100px !important;
+}
