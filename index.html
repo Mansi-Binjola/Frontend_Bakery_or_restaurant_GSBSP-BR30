@@ -8,19 +8,24 @@
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <div>	
-<header id="header">
+<header >
  	<nav class="navbar navbar-expand-lg navbar-light fixed-top" >
-  		<a class="navbar-brand" href="#header"><img src="logo/logo.png" class="img-logo"></a>
   			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
   			</button>
   		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    		<div class="navbar-nav">
-      				<a class="nav-item nav-link text-white" href="#about">About</a>
-      				<a class="nav-item nav-link text-white" href="#menu">Menu</a>
-      				<a class="nav-item nav-link text-white" href="#footer">Contact us</a>
+    		<div class="nav nav-tab" id="nav-tab" role="tablist">
+    					<a class="navbar-brand" href="#home" id="home-tab" aria-controls="home" data-toggle="tab" role="tab" aria-selected="true"><img src="logo/logo.png" class="img-logo"></a>
+      				<a class="nav-item nav-link text-white" href="#about">About us</a>
+      				<a class="nav-item nav-link text-white" id="menu-tab" href="#menu" aria-controls="menu" data-toggle="tab" role="tab" aria-selected="true">Food Corner</a>
+      				<a class="nav-item nav-link text-white" id="footer-tab" href="#footer" aria-controls="footer" data-toggle="tab" role="tab" aria-selected="true">Contact us</a>
+    </div>
     </div>
 </nav>
 </div>
+</header>
+<div id="page-container" >
+<div class="tab-content" id="nav-tabContent">
+<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
   		<div class="carousel-inner">
     		<div class="carousel-item active">
@@ -34,48 +39,262 @@
     		</div>
   		</div>
 	</div>
-</header>
-<main >
-	<section id="about">
-	This is the about section
-	</section>
-	</main>	
+<div id="about">
+	<div class="card mb-3" style="max-width: 900px;margin:100px">
+  <div class="row no-gutters">
+    <div class="col-md-12">
+      <img src="trial_files/logo.png" class="card-img" alt="swaad-logo" style="width:210px;height:auto; margin:30px"><div></div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body" style="margin-left:10px">
+        <h4 class="card-title">About Us</h4>
+        <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>Swaad, started in late 19s, with the aim to provide best quality, home like dishes to the customers and to cherish Indian culture</p>
+        <p class="card-text"></p><h6 class="text-muted"><p>To know more about us, check our social media handles!</p></h6><p></p>
+			<div class="col-md-8 text-white my-4 text-center text-md-left ">
+					<div class="py-2">
+                        <a href="#"><i class="fa fa-facebook fa-2x text-dark mx-3"></i></a>
+                        <a href="#"><i class="fa fa-youtube fa-2x text-dark mx-3"></i></a>
+			<a href="#"><i class="fa fa-whatsapp fa-2x text-dark mx-3"></i></a>
+			<a href="#"><i class="fa fa-instagram fa-2x text-dark mx-3"></i></a>
+                    </div>
+                </div>
+      </div>
+    </div>
+  </div>
 </div>
-     <footer  style="background-color: #2c292f">
-        <div class="container">
-            <div class="row ">
-            	<div class="col-md-4 text-center text-md-left ">
-            	<img src="logo/logo.png" class="footer-logo">
-     				</div>
+</div>
 
-                <div class="col-md-4 text-white text-center text-md-left ">
-                    <div class="py-2 my-4">
-                        <div>
-                            <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
-                                    309 -H, Pocket A-6,
+</div>
+<div class="tab-pane fade" id="menu" role="tabpanel" aria-labelledby="menu-tab">
+<div class="row-xs-4">
+	<div class="card-deck">
+		<div class="col-md-4"style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/idili.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Traditional Idili</h5>
+				 <p class="card-text">These South Indian tasty soft rice cakes can make your day refreshing.</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/gajar_ka_halwa.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Gajar Ka Halwa</h5>
+				 <p class="card-text">This sweet is made by our freshly picked carrots with lots of love.</p>
+			  </div>
+			</div>
+		</div>
+			<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/Aloo_tiki.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Aloo Tikki</h5>
+				 <p class="card-text">This easy to make snack can make your tea-time memorable</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-xs-4" style="padding:5px">
+	<div class="card-deck">
+		<div class="col-md-4"style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/chole_bhature.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Chole Bhature</h5>
+				 <p class="card-text">These chick peas curry goes best with our healthy indian bread.</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/paaner.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Khadhai Paneer</h5>
+				 <p class="card-text">The unsalted cottage cheese dipped in our special gravy is a must to taste.</p>
+			  </div>
+			</div>
+		</div>
+			<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/parantha.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Paratha</h5>
+				 <p class="card-text">Our layered flatbread is made with flour, salt, ghee & water and filled with your chosen toppings.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-xs-4" style="padding:5px">
+	<div class="card-deck">
+		<div class="col-md-4"style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/naan_butter_chicken.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Butter Chicken</h5>
+				 <p class="card-text">Chicken is love, and with butter it is life. The love life of every non-vegtarian family.</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/indian_thali.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Indian Thaali</h5>
+				 <p class="card-text">This plate has every flavours from all around the India.</p>
+			  </div>
+			</div>
+		</div>
+			<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/dosa.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Dosa</h5>
+				 <p class="card-text">This light weight rice wrapper when served with south's aromatic special Sambar curry is a must try</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-xs-4" style="padding:5px">
+	<div class="card-deck">
+		<div class="col-md-4"style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/korean.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Korean Food</h5>
+				 <p class="card-text">Let's taste some korean traditional food at home.</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/chicken_cutlet.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Chicken Cutlet</h5>
+				 <p class="card-text">Filled with aroma of indian herbs and spices, this chicken will not disappoint you. </p>
+			  </div>
+			</div>
+		</div>
+			<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/sandwich.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Veg Sandwich</h5>
+				 <p class="card-text">This is not just a sandwich, but way more than that. Add toppings of your choice and make it your type.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-xs-4" style="padding:5px">
+	<div class="card-deck">
+		<div class="col-md-4"style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/noodles.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Pasta</h5>
+				 <p class="card-text">Let us divide once again in streets of Italy. Let's once again taste the cheesy delicious pasta.</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/pizza.jpeg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Pizza</h5>
+				 <p class="card-text">It's crust has the topping of five delicious cheese. what more to stay, everything is cheesy peezy.</p>
+			  </div>
+			</div>
+		</div>
+			<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/cake.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Chocolate Cake</h5>
+				 <p class="card-text">Let's us all wish for happy life with this great appealing sweetest chocalate cake.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row-xs-4">
+	<div class="card-deck">
+		<div class="col-md-4"style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/raj_kachori.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Raj Kachori</h5>
+				 <p class="card-text">The King's choice, made by our best Chef of India.</p>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/samosa.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Samosa</h5>
+				 <p class="card-text">These crispy triangle shape, filled with aloo is a must snack to eat.</p>
+			  </div>
+			</div>
+		</div>
+			<div class="col-md-4" style="display:flex;justify-content: space-evenly">
+			<div class="card" style="width: 18rem;">
+			  <img class="card-img-top" src="photos/pulao.jpg" alt="Card image cap">
+			  <div class="card-body">
+				 <h5 class="card-title">Pulao</h5>
+				 <p class="card-text">Taste buds lover. This special cuisine is made by adding flavours and herbs to the rice.</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="tab-pane" id="footer" role="tabpanel" aria-labelledby="footer-tab"id>
+	<div class="card mb-3" style="max-width: 900px;margin:100px">
+  	<div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="trial_files/logo.png" class="card-img" alt="swaad-logo" style="width:210px;height:auto; margin:30px"><div></div>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body" style="margin-left:10px">
+        <h4 class="card-title">Contact Us</h4>
+        <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>309 -H, Pocket A-6,
                                    Sector - 1,DDA Shopping Complex
                                   Delhi, New Delhi - 11096</p>
-                        </div>
-
-                        <div> 
-                            <p><i class="fa fa-phone  mx-2 "></i> +91 98-76-54321</p>
-                        </div>
-                        <div>
-                        </div>  
-                    </div>  
+        <p class="card-text"></p><h6 class="text-muted"><p><i class="fa fa-phone  mx-2 "></i> +91 98-76-54321</p></h6><p></p>
+			<div class="col-md-8 text-white my-4 text-center text-md-left ">
+					<div class="py-2">
+                        <a href="#"><i class="fa fa-facebook fa-2x text-dark mx-3"></i></a>
+                        <a href="#"><i class="fa fa-youtube fa-2x text-dark mx-3"></i></a>
+			<a href="#"><i class="fa fa-whatsapp fa-2x text-dark mx-3"></i></a>
+			<a href="#"><i class="fa fa-instagram fa-2x text-dark mx-3"></i></a>
+                    </div>
                 </div>
-                
-                <div class="col-md-4 text-white my-4 text-center text-md-left ">
-							
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<footer class="fixed-bottom"style="background-color: #2c292f;">
+        <div class="container">
+            <div class="row ">
+            	<div class="col-md-12 text-center text-md-center " >
                     <div class="py-2">
-                        <a href="#"><i class="fa fa-facebook fa-2x text-white mx-3"></i></a>
-                        <a href="#"><i class="fa fa-youtube fa-2x text-white mx-3"></i></a>
-			<a href="#"><i class="fa fa-whatsapp fa-2x text-white mx-3"></i></a>
-			<a href="#"><i class="fa fa-instagram fa-2x text-white mx-3"></i></a>
+                        <a href="#"><i class="fa fa-facebook fa-2x text-white mx-4"></i></a>
+                        <a href="#"><i class="fa fa-youtube fa-2x text-white mx-4"></i></a>
+			<a href="#"><i class="fa fa-whatsapp fa-2x text-white mx-4"></i></a>
+			<a href="#"><i class="fa fa-instagram fa-2x text-white mx-4"></i></a>
                     </div>
                 </div>
             </div>  
         </div>
      </footer>
+</div>
 </div>
 </html>
